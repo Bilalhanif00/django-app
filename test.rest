@@ -1,0 +1,32 @@
+#### Signup
+POST http://127.0.0.1:8000/api/signup/  
+Content-Type: application/json
+
+{
+    "username": "ali",
+    "email": "bilalusa60@gmail.com",
+    "password": "bilal123"
+}
+
+#### Login
+POST http://127.0.0.1:8000/api/login/  
+Content-Type: application/json
+
+{
+    "username": "ali",
+    "password": "bilal123"
+}
+
+#### Veify Email
+GET http://127.0.0.1:8000/api/verify/<uid>/<token>/  
+
+
+#### Logout
+POST http://127.0.0.1:8000/api/logout/  
+Content-Type: application/json
+Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM2OTUwMjIzLCJpYXQiOjE3MzY5NDg0MjMsImp0aSI6IjA4ZGNkMmU1YWIzNDQ4YTU4MmI0ZDAwOWNjNDI4MWJmIiwidXNlcl9pZCI6OX0.1wGp-x2Pz6VE9FUrhpLV0KhPD8gwT-8ESzvGqdjvuu0
+
+# {
+#     "refresh": "<eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczNzAzNDYyMiwiaWF0IjoxNzM2OTQ4MjIyLCJqdGkiOiI5ZjM2OWE2Y2E1YTE0NTRkODM5NzE5NTFmMWE4NGMxMiIsInVzZXJfaWQiOjl9.2hVwjkCfthg1RpZJ1O0VRMUz2EMsloioS-Xzj1qg4h4>"
+# }
+
